@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Enter text to bypass censor filters</h1>
+<h2>(Doesn't always work)</h2>
+
+<input type="text" id="inputbox">
+
+<p>Click the "Try it" button to get the text in the text field.</p>
+
+<button onclick="bypass()">Try it</button>
+
+<p id="result"></p>
+
+<script>
+function bypass() {
+  var inputtext = document.getElementById("inputbox").value;
+  inputtext = inputtext.replace(/A/g, 'А');
+  inputtext = inputtext.replace(/B/g, 'В');
+  inputtext = inputtext.replace(/C/g, 'С');
+  inputtext = inputtext.replace(/E/g, 'Е');
+  inputtext = inputtext.replace(/H/g, 'Н');
+  inputtext = inputtext.replace(/I/g, 'І');
+  inputtext = inputtext.replace(/J/g, 'Ј');
+  inputtext = inputtext.replace(/K/g, 'Κ');
+  inputtext = inputtext.replace(/M/g, 'М');
+  inputtext = inputtext.replace(/N/g, 'Ν');
+  inputtext = inputtext.replace(/O/g, 'О');
+  inputtext = inputtext.replace(/P/g, 'Р');
+  inputtext = inputtext.replace(/T/g, 'Т');
+  inputtext = inputtext.replace(/X/g, 'Х');
+  inputtext = inputtext.replace(/a/g, 'а');
+  inputtext = inputtext.replace(/c/g, 'с');
+  inputtext = inputtext.replace(/e/g, 'е');
+  inputtext = inputtext.replace(/i/g, 'і');
+  inputtext = inputtext.replace(/j/g, 'ј');
+  inputtext = inputtext.replace(/o/g, 'о');
+  inputtext = inputtext.replace(/p/g, 'р');
+  inputtext = inputtext.replace(/x/g, 'х');
+  inputtext = inputtext.replace(/y/g, 'у');
+  document.getElementById("result").innerHTML = inputtext;
+}
+</script>
+
+</body>
+</html>
